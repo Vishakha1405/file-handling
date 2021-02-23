@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	FILE *fp;
+	char ch,a;
+	int i;
+	char str[]="mycaptain";
+	a=strrev(str);
+	fp=fopen("abc.txt","w");
+	fprintf(fp,"%s",str);
+	fprintf(fp,"%s",a);
+	fclose(fp);
+}
